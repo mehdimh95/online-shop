@@ -3,6 +3,7 @@ import TopBar from "./components/TopBar";
 import Header from "./components/Header";
 import SubHeder from "./components/SubHeder";
 import TopBody from "./components/TopBody";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <TopBody />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -118,6 +118,63 @@ body {
   color: #000;
 }
 
+
+#email-box {
+  background-color: #000000;
+  border: 2px solid #eeeeee;
+  color: #ffffff;
+  height: 50px;
+}
+
+#email-box::placeholder {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.footer-links .accordion-item {
+  border-bottom: 1px !important;
+  background-color: transparent;
+}
+
+.footer-links .accordion-item .accordion-button {
+  color: white;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.footer-links .accordion-item .accordion-button::after {
+  background-image: url("assets/icons/chevron-down.svg");
+}
+
+.footer-links-wrapper ul {
+  list-style-type: none;
+  padding: 0%;
+  margin-bottom: 0;
+}
+
+.footer-links-wrapper ul li {
+  padding: 4px 0;
+  color: #eee;
+  font-weight: 300;
+}
+
+.footer-links-wrapper ul li a {
+  text-decoration: none;
+  text-align: start;
+  color: #eee;
+}
+
+.footer-links-wrapper.footer-address ul li a {
+  color: #01a4ff;
+  text-decoration: underline;
+}
+
+#total-price {
+  border: #000000 1px solid;
+  width: 300px;
+  color: #000000;
+}
+
 @media only screen and (min-width: 992px) {
   .top-header {
     color: #000;
@@ -143,4 +200,31 @@ body {
     border-color: #000;
   }
 
+  #footerLinksAccordion {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #footerLinksAccordion>div {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+
+  #footerLinksAccordion .accordion-button {
+    pointer-events: none;
+  }
+
+  #footerLinksAccordion .accordion-button::after {
+    display: none;
+  }
+
+  #footerLinksAccordion .accordion-collapse {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #footerLinksAccordion>div {
+    width: 20%;
+  }
 }
