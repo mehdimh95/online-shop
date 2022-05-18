@@ -5,6 +5,7 @@ import SubHeder from "./components/SubHeder";
 import TopBody from "./components/TopBody";
 import SubBody from "./components/SubBody";
 import Footer from "./components/Footer";
+import ButtonsBody from "./components/ButtonsBody";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <div className="container">
           <SubHeder />
           <TopBody />
+          <ButtonsBody />
         </div>
       </div>
       <SubBody />
