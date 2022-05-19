@@ -152,6 +152,42 @@ button.continue-shopping {
   text-align: center;
 }
 
+.purchase-invoice > div {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #000000;
+}
+
+.purchase-invoice > p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #a2a6b0;
+}
+
+#checkout {
+  background-color: #0156ff;
+  color: #eee;
+  border-radius: 50px;
+}
+
+#check-out-with-paypal {
+  border-radius: 50px;
+  background-color: #ffb800;
+}
+
+#check-out-with-multiple-addresses {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  color: #a2a6b0;
+  text-align: center;
+  border-color: #a2a6b0;
+  border-radius: 50px;
+}
+
 #email-box {
   background-color: #000000;
   border: 2px solid #eeeeee;
