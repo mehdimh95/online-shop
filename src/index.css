@@ -118,6 +118,47 @@ body {
   color: #000;
 }
 
+.description {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.number-purchases {
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #f5f7ff;
+  width: 70px;
+  height: 50px;
+  border-radius: 6px;
+}
+
+.price {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.cart-quantity {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-image: url("assets/icons/chevron-down.svg");
+}
+
+.cart-quantity.increase {
+  transform: rotate(180deg);
+}
+
+.subtotal {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
 button.update-cart,
 button.clear-cart {
   color: #fff;
