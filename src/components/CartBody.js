@@ -14,19 +14,22 @@ const CardBody = ({ totalPrice = 0 }) => {
             Summary
           </h5>
           <div style={{ borderBottom: "1px solid #CACDD8" }}>
-            <div className="accordion" style={{ backgroundColor: "#F5F7FF" }}>
+            <div className="accordion" id="cartBodyAccordion" style={{ backgroundColor: "#F5F7FF" }}>
               <button
                 className="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
+                data-bs-target="#cartBodyCollapse"
                 style={{ backgroundColor: "#F5F7FF" }}
               >
                 Estimate Shipping and Tax
               </button>
 
               <div
-                className="accordion-collapse collapse show "
+                id="cartBodyCollapse"
+                className="accordion-collapse collapse"
                 aria-labelledby="panelsStayOpen-headingOne"
+                data-bs-parent="#cartBodyAccordion"
               >
                 <div style={{ backgroundColor: "#F5F7FF" }} className="py-2">
                   <p style={{ color: "#000" }}>
@@ -48,12 +51,13 @@ const CardBody = ({ totalPrice = 0 }) => {
                 className="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
+                data-bs-target="#cartDiscountCollapse"
                 style={{ backgroundColor: "#F5F7FF" }}
               >
                 Apply Discount Code
               </button>
 
-              <div className="accordion-collapse collapse">
+              <div className="accordion-collapse collapse" id="cartDiscountCollapse">
                 <div
                   className="py-2"
                   style={{ backgroundColor: "#F5F7FF", color: "#000" }}
