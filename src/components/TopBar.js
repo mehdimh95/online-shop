@@ -12,7 +12,7 @@ const TopBar = () => {
             <div
               className="d-flex p-3"
               style={{
-                margin: "-8px 0",
+                
                 backgroundColor: "#0156ff",
                 borderRadius: 30,
                 transform: "translateY(25px)",
